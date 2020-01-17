@@ -15,4 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/noticias','NoticiaController@index');
+Route::get('/noticias','NoticiaController@index') -> name ('noticias.index');
+Route::get('/noticias','NoticiaController@index') -> name ('noticias.show');
+
+
+Route::get('/noticias/{id}', 'NoticiaController@show');
+
+//misitio.com/noticias/5

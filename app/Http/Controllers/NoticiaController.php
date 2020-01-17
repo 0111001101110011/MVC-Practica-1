@@ -16,5 +16,11 @@ class NoticiaController extends Controller
         $argumentos['noticias'] = $noticias;
 
         return view('noticias.index', $argumentos);
+    
     }
+
+    public function show() {
+        
+    }
+
 }
