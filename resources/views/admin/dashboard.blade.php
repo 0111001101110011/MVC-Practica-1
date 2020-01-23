@@ -3,7 +3,7 @@
 
 @section('titulo','Administración | Dashboard')
 
-@selection('contenido')
+@section('contenido')
 
 <p> Aquí va el contenido </p>
 
