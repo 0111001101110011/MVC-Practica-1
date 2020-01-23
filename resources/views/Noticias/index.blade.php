@@ -24,25 +24,14 @@
     <tbody>
 
         @foreach($noticias as $noticia)
-
+                
         <tr> 
-
-            <td> 
+                    
+            <td> {{$noticia->titulo}} </td>
             
-                <a 
+            <td> <a href="{{ route('noticias.show', $noticia -> id) }}"> Leer más </a> </td>
             
-                      href="{{ route('noticias.show', $noticia -> id) }}">
-            
-                     Leer más 
-                </a>
-            
-            
-            <td>
-        
-            
- 
-         </tr>
-
+        </tr>
         @endforeach
 
     </tbody>

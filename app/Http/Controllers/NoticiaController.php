@@ -19,7 +19,12 @@ class NoticiaController extends Controller
     
     }
 
-    public function show() {
+    public function show($id) {
+
+        $noticia = Noticia::find($id);
+        $argumentos['noticia'] = $noticia;
+
+        return view('noticias.show',  $argumentos);
         
     }
 

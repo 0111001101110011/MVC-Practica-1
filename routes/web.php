@@ -22,3 +22,5 @@ Route::get('/noticias','NoticiaController@index') -> name ('noticias.show');
 Route::get('/noticias/{id}', 'NoticiaController@show');
 
 //misitio.com/noticias/5
+
+Route::get('/admin','AdminController@dashboard')->name('admin.dashboard');
