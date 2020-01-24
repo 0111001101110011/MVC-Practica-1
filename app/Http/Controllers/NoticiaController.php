@@ -22,10 +22,12 @@ class NoticiaController extends Controller
     public function show($id) {
 
         $noticia = Noticia::find($id);
+
+        $argumentos = array();
         $argumentos['noticia'] = $noticia;
 
         return view('noticias.show',  $argumentos);
         
     }
 
-}
+} 

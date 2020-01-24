@@ -29,7 +29,11 @@
                     
             <td> {{$noticia->titulo}} </td>
             
-            <td> <a href="{{ route('noticias.show', $noticia -> id) }}"> Leer más </a> </td>
+            <td> 
+
+                <a href="{{ route('noticias.show', $noticia -> id) }}"> Leer más </a> 
+           
+            </td>
             
         </tr>
         @endforeach
