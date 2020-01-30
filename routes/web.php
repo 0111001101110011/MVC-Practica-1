@@ -13,11 +13,16 @@
 
 
 
-Route::get('/','NoticiaController@index') -> name ('noticias.index');
-Route::get('/noticias/{id}', 'NoticiaController@show') -> name('noticias.show');
+Route::get('/','NoticiaController@index') -> name ('front.noticias.index');
+
+Route::get('/noticias/{id}', 'NoticiaController@show') -> name('front.noticias.show');
 
 //misitio.com/noticias/5
 
 Route::get('/admin','AdminController@dashboard')->name('admin.dashboard');
-Auth::routes(['resgister' => false]);
+
+
+Route::resource('/admin/noticias','Admin\NoticiaController');
+
+Auth::routes(['register' => false]);
 
