@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Noticias | {{ $noticia -> titulo }}</title>
+    <title>Noticias | {{ $noticia->titulo }}</title>
 </head>
 <body>
-
-    <h1> {{ $noticia -> titulo }} </h1>
-    <p> {{ $noticia -> cuerpo }} </p>
-    
+    <!-- <?php echo ""; ?> -->
+    <h1>{{ $noticia->titulo }}</h1>
+    <p>{{ $noticia->cuerpo }}</p>
 </body>
 </html>

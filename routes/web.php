@@ -11,18 +11,20 @@
 |
 */
 
+Route::get('/','NoticiaController@index')->name('front.noticias.index');
+Route::get('/noticias/{id}','NoticiaController@show')->name('front.noticias.show');
+//misitio.com/noticias/8
 
+Route::get('/admin','AdminController@dashboard')->
+    name('admin.dashboard');
 
-Route::get('/','NoticiaController@index') -> name ('front.noticias.index');
+//Atajo para establecer las 7 rutas básicas
+//de un recurso
+//index, show, create, store
+//edit, update, destroy
+Route::resource('/admin/noticias',
+    'Admin\NoticiaController');
 
-Route::get('/noticias/{id}', 'NoticiaController@show') -> name('front.noticias.show');
-
-//misitio.com/noticias/5
-
-Route::get('/admin','AdminController@dashboard')->name('admin.dashboard');
-
-
-Route::resource('/admin/noticias','Admin\NoticiaController');
 
 Auth::routes(['register' => false]);
 
