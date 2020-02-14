@@ -34,6 +34,10 @@
                                 rows="12" name="txtCuerpo"></textarea>
                         </div>
                         <div class="form-group">
+                            <label>Imagen de portada</label>
+                            <input type="file" name="imgPortada" class="form-control"/>
+                        </div>
+                        <div class="form-group">
                             <button type="submit"
                                 class="btn btn-primary">Guardar</button>
                         </div>
