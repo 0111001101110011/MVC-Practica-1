@@ -70,6 +70,7 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <form action="" ID="deleteForm" method="post">
+                            
                             <div class="modal-header">
                                 <h4 class="modal-title">Eliminar Noticia</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
