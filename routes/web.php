@@ -28,3 +28,5 @@ Route::resource('/admin/noticias',
 
 Auth::routes(['register' => false]);
 
+Route::resource('/admin/usuarios',
+    'Admin\UsuarioController');
